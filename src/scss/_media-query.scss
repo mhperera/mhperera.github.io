@@ -1,0 +1,81 @@
+
+@media (max-width: $breakpoint-tablet) {
+
+    * {
+        font-size: 1rem;
+    }
+
+    .Navigation {
+        padding: 1rem 1.5rem;
+        ul {
+            display: none;
+        }
+        .hamburger-react{
+            display: block;
+        }
+
+    }
+
+    .Container{
+        width: 90%;
+    }
+
+    .Hero{
+
+        .HeroDetails, .HeroImage{
+            padding: 1.5rem 2rem ;
+        }
+
+        .HeroDetails{
+
+            h1{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 0.75rem;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: $breakpoint-palmtop) {
+	.Hero{
+        flex-direction: column-reverse;
+
+        .HeroDetails{
+            width: 100%;
+            text-align: center;
+
+            .button-group{
+                justify-content: center;
+            }
+        }
+        .HeroImage{
+            width: 100%;
+            img{
+                width:95%;
+                max-width: 500px;
+                min-width: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-smallmobile) {
+    .Hero{
+        .HeroDetails{
+            .button-group{
+                flex-direction: column;
+
+                button{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

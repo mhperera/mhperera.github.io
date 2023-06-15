@@ -1,0 +1,19 @@
+.btn{
+    color: $light_color;
+	padding: 0.5rem 1.5rem;
+    width: auto;
+    border: none;
+    border-radius: 0.45rem;
+    margin-right: 0.5rem;
+    min-width: max-content;
+}
+
+.btn-secondary{
+    background-color: $secondary_color;
+    border: $secondary_color;
+}
+
+.btn-ghost-tertiary{
+    background-color: transparent;
+    border: 3px solid $tertiary_color;
+}
