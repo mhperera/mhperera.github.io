@@ -3,18 +3,18 @@ import HeroImage from './images/HeroImage.png'
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Hero from './components/Hero/Hero';
+import Container from './components/UI/Container';
 // import { motion } from "framer-motion"
 
 const List = [
 	{ id: 1, title: 'My Self', active: true, path: '/' },
-	{ id: 2, title: 'Education', active: false, path: '/' },
-	{ id: 3, title: 'Experience', active: false, path: '/' },
-	{ id: 4, title: 'Projects', active: false, path: '/' },
-	{ id: 5, title: 'Referees', active: false, path: '/' },
-	{ id: 6, title: 'Contact', active: false, path: '/' },
+	{ id: 2, title: 'Portfolio', active: false, path: '/' },
+	{ id: 3, title: 'Other', active: false, path: '/' },
+	{ id: 4, title: 'Contact', active: false, path: '/' },
 ];
 
 function App() {
+
 	const [isOpen, setOpen] = useState(false);
 	const [menuItemList, setMenuItemList] = useState(List);
 
@@ -28,7 +28,8 @@ function App() {
 	};
 
 	return (
-		<div className="App">
+		<Container className="App">
+
 			<Navigation
 				menuItemList={menuItemList}
 				isOpen={isOpen}
@@ -38,7 +39,7 @@ function App() {
 
 			<Hero HeroImage={HeroImage} />
 
-		</div>
+		</Container>
 	);
 }
 

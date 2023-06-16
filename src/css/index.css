@@ -2,27 +2,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap");
 .btn {
   color: #ffffff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   width: auto;
-  border: none;
+  border: 3px transparent solid;
   border-radius: 0.45rem;
   margin-right: 0.5rem;
   min-width: max-content;
+  transition: 0.3s;
 }
 
 .btn-secondary {
   background-color: #482F9B;
-  border: #482F9B;
+  border: 3px solid #482F9B;
+}
+.btn-secondary:hover {
+  background: #5a3bc2;
+}
+
+.btn-tertiary {
+  background-color: #E7A018;
+  border: 3px solid #E7A018;
+}
+.btn-tertiary:hover {
+  background: #ecb346;
+}
+
+.btn-ghost-secondary {
+  background-color: transparent;
+  border: 3px solid #482F9B;
+}
+.btn-ghost-secondary:hover {
+  background-color: #482F9B;
 }
 
 .btn-ghost-tertiary {
   background-color: transparent;
   border: 3px solid #E7A018;
 }
+.btn-ghost-tertiary:hover {
+  background-color: #E7A018;
+}
 
+.btn-lead {
+  font-size: 1.15rem;
+}
+
+.btn-circle-wrapper {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.btn-circle-wrapper {
+  margin-top: 2rem;
+}
+.btn-circle-wrapper .circle-border {
+  width: 125px;
+  height: 125px;
+  background: transparent;
+  border-radius: 50%;
+  border: 0.15rem dashed #E7A018;
+  animation-name: Rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: Rotate;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: Rotate;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+.btn-circle-wrapper .circle-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130%;
+  height: 130%;
+}
+.btn-circle-wrapper .circle-content .icon {
+  fill: #E7A018;
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes Rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
   box-sizing: border-box;
   font-size: 1rem;
   text-decoration: none;
@@ -38,9 +139,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .Container {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -49,7 +154,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 2rem 0;
 }
 .Navigation .logo {
   font-size: 1.5rem;
@@ -92,7 +197,8 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-.Hero .HeroDetails, .Hero .HeroImage {
+.Hero .HeroDetails,
+.Hero .HeroImage {
   padding: 1.5rem 4rem;
   width: 50%;
 }
@@ -117,6 +223,7 @@ body {
 }
 .Hero .HeroImage {
   padding-right: 0;
+  overflow: hidden;
 }
 .Hero .HeroImage img {
   width: 90%;

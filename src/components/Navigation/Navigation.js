@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import Hamburger from 'hamburger-react';
+import Button from '../UI/Button';
 
 const Navigation = (props) => {
 	return (
@@ -17,6 +18,7 @@ const Navigation = (props) => {
 					/>
 				))}
 			</ul>
+			<Button className='btn-secondary btn-lead'>My Resume</Button>
 			<Hamburger
 				duration={0.25}
 				easing="ease-in"

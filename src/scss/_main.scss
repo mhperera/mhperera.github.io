@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	letter-spacing: 0.5px;
 	box-sizing: border-box;
 	font-size: 1rem;
 	text-decoration: none;
@@ -16,16 +17,17 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.Container{
+.hidden{display: none !important;}
+
+.Container {
 	width: 85%;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: auto;
 }
 
 // ================================== NAVIGATION ==================================
 
 .Navigation {
-
 	// position: fixed;
 	// top: 0;
 	// left: 0;
@@ -34,7 +36,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 6rem;
+	padding: 2rem 0;
 
 	.logo {
 		font-size: 1.5rem;
@@ -42,7 +44,6 @@ body {
 	}
 
 	ul {
-
 		list-style: none;
 		display: flex;
 		flex-direction: row;
@@ -52,12 +53,12 @@ body {
 			cursor: pointer;
 			transition: all 0.25s ease-in 0s;
 
-			&.active{
+			&.active {
 				// transition: all 0.25s ease-in 0s;
 			}
 
-			&.active::after{
-				content: "";
+			&.active::after {
+				content: '';
 				width: 140%;
 				height: 3px;
 				background-color: $tertiary_color;
@@ -67,12 +68,10 @@ body {
 				left: -20%;
 				transition: all 0.25s ease-in 0s;
 			}
-
 		}
-
 	}
 
-	.hamburger-react{
+	.hamburger-react {
 		display: none;
 	}
 
@@ -80,55 +79,54 @@ body {
 		ul {
 			display: none;
 		}
-		.hamburger-react{
+		.hamburger-react {
 			display: block;
 		}
 	}
-
 }
 
 // ===================================== HERO =====================================
 
-.Hero{
-	display:flex;
+.Hero {
+	display: flex;
 	flex-direction: row-reverse;
 
-	.HeroDetails, .HeroImage{
-		padding: 1.5rem 4rem ;
+	.HeroDetails,
+	.HeroImage {
+		padding: 1.5rem 4rem;
 		width: 50%;
 	}
 
-	.HeroDetails{
-
-		display:flex;
+	.HeroDetails {
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding-left: 0;
 		text-align: left;
 
-		h1{
+		h1 {
 			font-size: 3rem;
 			margin-bottom: 1rem;
 		}
 
-		p{
+		p {
 			margin-bottom: 1rem;
 		}
 
-		.button-group{
+		.button-group {
 			display: flex;
 			flex-direction: row;
 			margin-bottom: 1rem;
 		}
 	}
 
-	.HeroImage{
+	.HeroImage {
 		padding-right: 0;
+		overflow: hidden;
 
-		img{
+		img {
 			width: 90%;
 			min-width: 300px;
 		}
 	}
-
 }
