@@ -49,6 +49,7 @@
 }
 
 .btn-circle-wrapper {
+	z-index: -1;
 	display: flex;
 	justify-content: center;
 	color: $light_color;

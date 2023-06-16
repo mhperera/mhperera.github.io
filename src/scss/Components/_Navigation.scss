@@ -2,15 +2,16 @@
 /* COMPONENT : Navigation */
 
 .Navigation {
-	// position: fixed;
-	// top: 0;
-	// left: 0;
-	// right: 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 0;
+	background-color: $primary_color;
 
 	.logo {
 		font-size: 1.5rem;
