@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import Hamburger from 'hamburger-react';
-import Button from '../UI/Button';
+import Button from './../../UI/Button';
 
 const Navigation = (props) => {
 	return (

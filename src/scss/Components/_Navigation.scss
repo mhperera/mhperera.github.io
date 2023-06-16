@@ -1,0 +1,60 @@
+
+/* COMPONENT : Navigation */
+
+.Navigation {
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+
+		li {
+			padding: 0.5rem 0 0.5rem 3rem;
+			cursor: pointer;
+			transition: all 0.25s ease-in 0s;
+
+			&.active {
+				// transition: all 0.25s ease-in 0s;
+			}
+
+			&.active::after {
+				content: '';
+				width: 140%;
+				height: 3px;
+				background-color: $tertiary_color;
+				display: block;
+				top: 12px;
+				position: relative;
+				left: -20%;
+				transition: all 0.25s ease-in 0s;
+			}
+		}
+	}
+
+	.hamburger-react {
+		display: none;
+	}
+
+	@media (max-width: $breakpoint-tablet) {
+		ul {
+			display: none;
+		}
+		.hamburger-react {
+			display: block;
+		}
+	}
+}

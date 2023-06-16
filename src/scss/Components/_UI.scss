@@ -1,0 +1,18 @@
+
+/* COMPONENT : UI Components */
+
+.Container {
+	width: 85%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.Section{
+
+	margin-top: 10rem;
+
+	&.semi-section{
+		margin-top: 6rem;
+	}
+
+}

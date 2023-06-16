@@ -1,7 +1,26 @@
+
+/* ================================== STYLES STARTS HERE ================================== */
+
 @import './_colors.scss';
+
 @import './_fonts.scss';
+
+@import './_utility.scss';
+
+@import './_elements.scss';
+
+@import './headings';
+
 @import './buttons';
+
 @import './images';
+
 @import './breakpoints';
+
+@import './Components/Components.scss';
+
 @import './_main.scss';
+
 @import './media-query';
+
+/* ================================== STYLES ENDS HERE ================================== */

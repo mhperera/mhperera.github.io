@@ -1,0 +1,47 @@
+
+/* COMPONENT : Hero */
+
+.Hero {
+	display: flex;
+	flex-direction: row-reverse;
+
+	.HeroDetails,
+	.HeroImage {
+		padding: 1.5rem 4rem;
+		width: 50%;
+	}
+
+	.HeroDetails {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 0;
+		text-align: left;
+
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		.button-group {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.HeroImage {
+		padding-right: 0;
+		overflow: hidden;
+
+		img {
+			width: 90%;
+			min-width: 300px;
+		}
+	}
+}
+

@@ -1,6 +1,64 @@
+/* ================================== STYLES STARTS HERE ================================== */ /* ==================================== Colors ==================================== */ /* ==================================== Fonts ==================================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap");
-.btn {
+/* ================================== Utility Classes ================================== */
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* ==================================== HTML ELEMENTS ==================================== */
+p {
+  line-height: 2rem;
+}
+
+/* ==================================== Headings ==================================== */
+.HeadingWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.Heading {
+  font-weight: 500;
+  border-bottom: #E7A018 3px solid;
+  width: max-content;
+  padding: 1rem 1.5rem;
+}
+
+.Heading1 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+/* ==================================== Buttons ==================================== */
+.Button {
   color: #ffffff;
   padding: 0.75rem 1.5rem;
   width: auto;
@@ -120,35 +178,7 @@
     -moz-transform: rotate(360deg);
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0.5px;
-  box-sizing: border-box;
-  font-size: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-body {
-  background: #010222;
-  color: #ffffff;
-  margin: 0;
-  font-family: -apple-system, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.Container {
-  width: 85%;
-  max-width: 1400px;
-  margin: auto;
-}
-
+/* ==================================== Images ==================================== */ /* ==================================== Breakpoints ==================================== */ /* ==================================== ALL COMPONENTS ==================================== */ /* COMPONENT : Navigation */
 .Navigation {
   display: flex;
   flex-direction: row;
@@ -193,6 +223,7 @@ body {
   }
 }
 
+/* COMPONENT : Hero */
 .Hero {
   display: flex;
   flex-direction: row-reverse;
@@ -230,6 +261,52 @@ body {
   min-width: 300px;
 }
 
+/* COMPONENT : UI Components */
+.Container {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.Section {
+  margin-top: 10rem;
+}
+.Section.semi-section {
+  margin-top: 6rem;
+}
+
+.Detail {
+  padding: 1rem 1rem;
+}
+.Detail h1 {
+  font-size: 1.25rem;
+  padding: 1rem 1rem;
+}
+.Detail span {
+  padding: 1rem 1rem;
+}
+
+/* ================================== Main Styles ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  background: #010222;
+  color: #ffffff;
+  margin: 0;
+  font-family: -apple-system, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================== Media Queries ================================== */
 @media (max-width: 1100px) {
   * {
     font-size: 1rem;
@@ -285,5 +362,6 @@ body {
     margin-bottom: 1rem;
   }
 }
+/* ================================== STYLES ENDS HERE ================================== */
 
 /*# sourceMappingURL=index.css.map */

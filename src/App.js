@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import HeroImage from './images/HeroImage.png'
+import HeroImage from './images/HeroImage.png';
 import './App.css';
-import Navigation from './components/Navigation/Navigation';
-import Hero from './components/Hero/Hero';
+import Navigation from './components/Template/Navigation/Navigation';
+import Myself from './components/Pages/MySelf/Myself';
 import Container from './components/UI/Container';
 // import { motion } from "framer-motion"
 
@@ -13,8 +13,15 @@ const List = [
 	{ id: 4, title: 'Contact', active: false, path: '/' },
 ];
 
-function App() {
+const PersonalDetails = [
+	{ id: 0, title: 'Location', value: 'Maharagama | Colombo' },
+	{ id: 1, title: 'Languages', value: 'English | Sinhala' },
+	{ id: 2, title: 'Marital Status', value: 'Happily Married' },
+	{ id: 3, title: 'Email', value: 'mhperera1995@gmail.com' },
+	{ id: 4, title: 'Mobile', value: '+94 761 812 800 | +94 702 328 468' },
+];
 
+function App() {
 	const [isOpen, setOpen] = useState(false);
 	const [menuItemList, setMenuItemList] = useState(List);
 
@@ -29,7 +36,6 @@ function App() {
 
 	return (
 		<Container className="App">
-
 			<Navigation
 				menuItemList={menuItemList}
 				isOpen={isOpen}
@@ -37,8 +43,7 @@ function App() {
 				onClickNavLink={handleNavLink}
 			/>
 
-			<Hero HeroImage={HeroImage} />
-
+			<Myself HeroImage={HeroImage} PersonalDetails={PersonalDetails}/>
 		</Container>
 	);
 }
