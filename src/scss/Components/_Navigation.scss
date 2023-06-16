@@ -24,25 +24,37 @@
 		flex-direction: row;
 
 		li {
+
 			padding: 0.5rem 0 0.5rem 3rem;
 			cursor: pointer;
-			transition: all 0.25s ease-in 0s;
+			transition: all $transition_time_mediam;
 
-			&.active {
-				// transition: all 0.25s ease-in 0s;
-			}
-
-			&.active::after {
+			&::after{
 				content: '';
 				width: 140%;
 				height: 3px;
-				background-color: $tertiary_color;
 				display: block;
 				top: 12px;
 				position: relative;
 				left: -20%;
-				transition: all 0.25s ease-in 0s;
+				transition: all $transition_time_fast ease-in 0s;
 			}
+
+			&:hover::after {
+				height: 4px;
+				width: 160%;
+				left: -30%;
+				background-color: $secondary_color;
+			}
+
+			&::after {
+				background-color: $primary_color;
+			}
+
+			&.active::after {
+				background-color: $tertiary_color;
+			}
+
 		}
 	}
 

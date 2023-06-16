@@ -50,6 +50,10 @@ p {
   border-bottom: #E7A018 3px solid;
   width: max-content;
   padding: 1rem 1.5rem;
+  transition: all 0.6s;
+}
+.Heading:hover {
+  padding: 1rem 2rem;
 }
 
 .Heading1 {
@@ -66,7 +70,7 @@ p {
   border-radius: 0.45rem;
   margin-right: 0.5rem;
   min-width: max-content;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .btn-secondary {
@@ -125,19 +129,19 @@ p {
   border-radius: 50%;
   border: 0.15rem dashed #E7A018;
   animation-name: Rotate;
-  animation-duration: 20s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-name: Rotate;
-  -webkit-animation-duration: 20s;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-name: Rotate;
-  -moz-animation-duration: 20s;
+  -moz-animation-duration: 25s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
   -ms-animation-name: Rotate;
-  -ms-animation-duration: 20s;
+  -ms-animation-duration: 25s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
 }
@@ -204,18 +208,29 @@ p {
 .Navigation ul li {
   padding: 0.5rem 0 0.5rem 3rem;
   cursor: pointer;
-  transition: all 0.25s ease-in 0s;
+  transition: all 0.6s;
 }
-.Navigation ul li.active::after {
+.Navigation ul li::after {
   content: "";
   width: 140%;
   height: 3px;
-  background-color: #E7A018;
   display: block;
   top: 12px;
   position: relative;
   left: -20%;
-  transition: all 0.25s ease-in 0s;
+  transition: all 0.4s ease-in 0s;
+}
+.Navigation ul li:hover::after {
+  height: 4px;
+  width: 160%;
+  left: -30%;
+  background-color: #482F9B;
+}
+.Navigation ul li::after {
+  background-color: #010222;
+}
+.Navigation ul li.active::after {
+  background-color: #E7A018;
 }
 .Navigation .hamburger-react {
   display: none;

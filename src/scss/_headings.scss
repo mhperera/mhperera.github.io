@@ -11,6 +11,12 @@
     border-bottom: $tertiary_color 3px solid;
     width: max-content;
     padding: 1rem 1.5rem;
+    transition: all $transition_time_mediam;
+
+    &:hover{
+        padding: 1rem 2rem;
+    }
+
 }
 
 .Heading1{
