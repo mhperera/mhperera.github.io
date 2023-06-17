@@ -1,32 +1,140 @@
-
 /* ================================== Utility Classes ================================== */
 
-.hidden{display: none !important;}
-
-.flex{
-    display: flex;
+.hidden {
+	display: none !important;
 }
 
-.flex-column{
-    flex-direction: column;
+.p-0{
+	padding: 0;
+}
+.pt-0{
+	padding: 0;
+}
+.pb-0{
+	padding: 0;
+}
+.ps-0{
+	padding: 0;
+}
+.pe-0{
+	padding: 0;
 }
 
-.flex-row{
-    flex-direction: row;
+.m-0{
+	margin: 0;
 }
 
-.justify-content-center{
-    justify-content: center;
+.mt-0{
+	margin: 0;
 }
 
-.justify-content-between{
-    justify-content: space-between;
+.mb-0{
+	margin: 0;
 }
 
-.justify-content-space-evenly{
-    justify-content: space-evenly;
+.ms-0{
+	margin: 0;
 }
 
-.align-items-center{
-    align-items: center;
+.me-0{
+	margin: 0;
+}
+
+
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+	justify-content: space-evenly;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.highlight {
+	padding: 0.35rem 0.75rem;
+	border-radius: 0.25rem;
+	font-size: 1.15rem;
+	margin: 0 0.5rem;
+	white-space: nowrap;
+	transition: $transition_time_fast;
+}
+
+.highlight-secondary {
+	@extend .highlight;
+	background-color: $secondary_color;
+	&:hover{
+		background-color: lighten($secondary_color, $bg_lighten_by);
+	}
+}
+
+.highlight-tertiary {
+	@extend .highlight;
+	background-color: $tertiary_color;
+	&:hover{
+		background-color: lighten($tertiary_color, $bg_lighten_by);
+	}
+}
+
+.highlight-pink {
+	@extend .highlight;
+	background-color: $pink_color;
+	&:hover{
+		background-color: lighten($pink_color, $bg_lighten_by);
+	}
+}
+
+.highlight-lightblue {
+	@extend .highlight;
+	background-color: $lightblue_color;
+	&:hover{
+		background-color: lighten($lightblue_color, $bg_lighten_by);
+	}
+}
+
+.highlight-orange {
+	@extend .highlight;
+	background-color: $orange_color;
+	&:hover{
+		background-color: lighten($orange_color, $bg_lighten_by);
+	}
+}
+
+.highlight-green {
+	@extend .highlight;
+	background-color: $green_color;
+	&:hover{
+		background-color: lighten($green_color, $bg_lighten_by);
+	}
+}
+
+.highlight-rainbow {
+	background: rgb(247, 37, 133);
+	background: linear-gradient(
+		312deg,
+		rgba(247, 37, 133, 1) 16%,
+		rgba(59, 47, 155, 1) 40%,
+		rgba(4, 102, 200, 1) 57%,
+		rgba(80, 151, 36, 1) 73%,
+		rgba(255, 209, 0, 1) 92%
+	);
 }

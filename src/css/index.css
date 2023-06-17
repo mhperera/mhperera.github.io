@@ -6,6 +6,46 @@
   display: none !important;
 }
 
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding: 0;
+}
+
+.pb-0 {
+  padding: 0;
+}
+
+.ps-0 {
+  padding: 0;
+}
+
+.pe-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin: 0;
+}
+
+.mb-0 {
+  margin: 0;
+}
+
+.ms-0 {
+  margin: 0;
+}
+
+.me-0 {
+  margin: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -34,9 +74,66 @@
   align-items: center;
 }
 
+.highlight, .highlight-green, .highlight-orange, .highlight-lightblue, .highlight-pink, .highlight-tertiary, .highlight-secondary {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  margin: 0 0.5rem;
+  white-space: nowrap;
+  transition: 0.4s;
+}
+
+.highlight-secondary {
+  background-color: #482F9B;
+}
+.highlight-secondary:hover {
+  background-color: #5a3bc2;
+}
+
+.highlight-tertiary {
+  background-color: #E7A018;
+}
+.highlight-tertiary:hover {
+  background-color: #ecb346;
+}
+
+.highlight-pink {
+  background-color: #f72585;
+}
+.highlight-pink:hover {
+  background-color: #f956a1;
+}
+
+.highlight-lightblue {
+  background-color: #0466c8;
+}
+.highlight-lightblue:hover {
+  background-color: #0580fa;
+}
+
+.highlight-orange {
+  background-color: #f24b04;
+}
+.highlight-orange:hover {
+  background-color: #fc6b2d;
+}
+
+.highlight-green {
+  background-color: #509724;
+}
+.highlight-green:hover {
+  background-color: #66c02e;
+}
+
+.highlight-rainbow {
+  background: rgb(247, 37, 133);
+  background: linear-gradient(312deg, rgb(247, 37, 133) 16%, rgb(59, 47, 155) 40%, rgb(4, 102, 200) 57%, rgb(80, 151, 36) 73%, rgb(255, 209, 0) 92%);
+}
+
 /* ==================================== HTML ELEMENTS ==================================== */
 p {
-  line-height: 2rem;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
 }
 
 /* ==================================== Headings ==================================== */
@@ -45,18 +142,18 @@ p {
   justify-content: center;
 }
 
-.Heading {
+.Heading, .H1 {
   font-weight: 500;
   border-bottom: #E7A018 3px solid;
   width: max-content;
   padding: 1rem 1.5rem;
   transition: all 0.6s;
 }
-.Heading:hover {
+.Heading:hover, .H1:hover {
   padding: 1rem 2rem;
 }
 
-.Heading1 {
+.H1 {
   font-size: 2.5rem;
   margin-bottom: 4rem;
 }
@@ -75,7 +172,7 @@ p {
 
 .btn-secondary {
   background-color: #482F9B;
-  border: 3px solid #482F9B;
+  border: 3px solid #E7A018;
 }
 .btn-secondary:hover {
   background: #5a3bc2;
@@ -89,20 +186,12 @@ p {
   background: #ecb346;
 }
 
-.btn-ghost-secondary {
-  background-color: transparent;
-  border: 3px solid #482F9B;
-}
-.btn-ghost-secondary:hover {
-  background-color: #482F9B;
-}
-
-.btn-ghost-tertiary {
+.btn-ghost {
   background-color: transparent;
   border: 3px solid #E7A018;
 }
-.btn-ghost-tertiary:hover {
-  background-color: #E7A018;
+.btn-ghost:hover {
+  background-color: #482F9B;
 }
 
 .btn-lead {
@@ -110,7 +199,6 @@ p {
 }
 
 .btn-circle-wrapper {
-  z-index: -1;
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -157,6 +245,11 @@ p {
   fill: #E7A018;
   height: 25px;
   width: 25px;
+  transition: 0.4s;
+}
+.btn-circle-wrapper .circle-content .icon:hover {
+  width: 35px;
+  height: 35px;
 }
 
 @keyframes Rotate {
@@ -186,6 +279,7 @@ p {
 /* ==================================== Images ==================================== */ /* ==================================== Breakpoints ==================================== */ /* ==================================== ALL COMPONENTS ==================================== */ /* COMPONENT : Navigation */
 .Navigation {
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -297,7 +391,9 @@ p {
 }
 
 .Detail {
+  display: inline-block;
   padding: 1rem 1rem;
+  width: 33%;
 }
 .Detail h1 {
   font-size: 1.25rem;
@@ -354,6 +450,10 @@ body {
   .Hero .HeroDetails p {
     font-size: 0.75rem;
   }
+  .Detail {
+    display: inline-block;
+    width: 50%;
+  }
 }
 @media (max-width: 1100px) {
   .Hero {
@@ -373,6 +473,11 @@ body {
     width: 95%;
     max-width: 500px;
     min-width: unset;
+  }
+  .Detail {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 320px) {

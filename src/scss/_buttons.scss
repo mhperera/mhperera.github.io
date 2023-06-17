@@ -14,9 +14,9 @@
 
 .btn-secondary {
 	background-color: $secondary_color;
-	border: 3px solid $secondary_color;
+	border: 3px solid $tertiary_color;
     &:hover{
-        background: lighten($secondary_color, 10%)
+        background: lighten($secondary_color, $bg_lighten_by)
     }
 }
 
@@ -24,23 +24,15 @@
 	background-color: $tertiary_color;
 	border: 3px solid $tertiary_color;
     &:hover{
-        background: lighten($tertiary_color, 10%)
+        background: lighten($tertiary_color, $bg_lighten_by)
     }
 }
 
-.btn-ghost-secondary {
-	background-color: transparent;
-	border: 3px solid $secondary_color;
-    &:hover{
-        background-color: $secondary_color;
-    }
-}
-
-.btn-ghost-tertiary {
+.btn-ghost {
 	background-color: transparent;
 	border: 3px solid $tertiary_color;
     &:hover{
-        background-color: $tertiary_color;
+        background-color: $secondary_color;
     }
 }
 
@@ -49,7 +41,6 @@
 }
 
 .btn-circle-wrapper {
-	z-index: -1;
 	display: flex;
 	justify-content: center;
 	color: $light_color;
@@ -99,6 +90,13 @@
             fill: $tertiary_color;
             height: 25px;
             width: 25px;
+			transition: $transition_time_fast;
+
+			&:hover{
+				width: 35px;
+				height: 35px;
+			}
+
         }
 
 	}

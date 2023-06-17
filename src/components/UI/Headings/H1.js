@@ -1,11 +1,11 @@
 import React from 'react';
 import HeadingWrapper from './HeadingWrapper';
 
-const Header1 = (props) => {
+const H1 = (props) => {
 	return (
 		<HeadingWrapper>
 			<h1
-				className={`Heading Heading1 ${props.className}`}
+				className={`H1 ${props.className}`}
 				style={props.style}
 			>
 				{props.children}
@@ -14,4 +14,4 @@ const Header1 = (props) => {
 	);
 };
 
-export default Header1;
+export default H1;
