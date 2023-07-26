@@ -84,10 +84,10 @@
 }
 
 .highlight-secondary {
-  background-color: #482F9B;
+  background-color: #4c55bd;
 }
 .highlight-secondary:hover {
-  background-color: #5a3bc2;
+  background-color: #7178cb;
 }
 
 .highlight-tertiary {
@@ -160,7 +160,7 @@ p {
 
 .big-text {
   font-size: 5rem;
-  text-shadow: 4px 4px 0px #482F9B;
+  text-shadow: 4px 4px 0px #4c55bd;
   font-weight: 400;
 }
 
@@ -177,11 +177,11 @@ p {
 }
 
 .btn-secondary {
-  background-color: #482F9B;
+  background-color: #4c55bd;
   border: 3px solid #E7A018;
 }
 .btn-secondary:hover {
-  background: #5a3bc2;
+  background: #7178cb;
 }
 
 .btn-tertiary {
@@ -197,7 +197,7 @@ p {
   border: 3px solid #E7A018;
 }
 .btn-ghost:hover {
-  background-color: #482F9B;
+  background-color: #4c55bd;
 }
 
 .btn-lead {
@@ -285,7 +285,7 @@ p {
 /* ==================================== Images ==================================== */ /* ==================================== Breakpoints ==================================== */ /* ==================================== ALL COMPONENTS ==================================== */ /* COMPONENT : Navigation */
 .Navigation {
   position: sticky;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -324,7 +324,7 @@ p {
   height: 4px;
   width: 160%;
   left: -30%;
-  background-color: #482F9B;
+  background-color: #4c55bd;
 }
 .Navigation ul li::after {
   background-color: #010222;
@@ -410,6 +410,43 @@ p {
   padding: 1rem 1rem;
 }
 
+.TechList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.TechGroup {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+.TechGroup .Stagebar {
+  border: 3px solid #4c55bd;
+  border-radius: 8px;
+  height: 20px;
+  width: 55%;
+  position: relative;
+  transition: all 0.2s ease-in 0s;
+}
+.TechGroup .Stagebar:hover {
+  border-color: #E7A018;
+}
+.TechGroup .Stagebar > span {
+  background-color: #4c55bd;
+  outline: 3px solid #4c55bd;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin-left: 1px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
 /* ================================== Main Styles ================================== */
 * {
   margin: 0;
@@ -461,8 +498,12 @@ body {
     display: inline-block;
     width: 50%;
   }
+  .TechGroup {
+    flex-direction: row;
+    flex-basis: 50% !important;
+  }
 }
-@media (max-width: 1100px) {
+@media (max-width: 750px) {
   .Hero {
     flex-direction: column-reverse;
   }
@@ -486,6 +527,9 @@ body {
     width: 100%;
     margin-bottom: 2rem;
   }
+  .TechGroup {
+    flex-basis: 100% !important;
+  }
 }
 @media (max-width: 320px) {
   .Hero .HeroDetails .button-group {
@@ -493,6 +537,17 @@ body {
   }
   .Hero .HeroDetails .button-group button {
     margin-bottom: 1rem;
+  }
+  .TechGroup {
+    flex-basis: 100% !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .TechGroup h4 {
+    margin-bottom: 15px;
+  }
+  .TechGroup .Stagebar {
+    width: 100%;
   }
 }
 /* ================================== STYLES ENDS HERE ================================== */

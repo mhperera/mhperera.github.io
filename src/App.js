@@ -13,6 +13,77 @@ const List = [
 	{ id: 4, title: 'Contact', active: false, path: '/' },
 ];
 
+const TechStack = [
+	{
+		name: 'ReactJs',
+		stage: '60',
+	},
+	{
+		name: 'Javascript',
+		stage: '70',
+	},
+	{
+		name: 'Laravel',
+		stage: '50',
+	},
+	{
+		name: 'PHP',
+		stage: '60',
+	},
+	{
+		name: 'Codeigniter',
+		stage: '70',
+	},
+	{
+		name: 'MySQL',
+		stage: '80',
+	},
+	{
+		name: 'Git',
+		stage: '50',
+	},
+	{
+		name: 'Redux',
+		stage: '40',
+	},
+	{
+		name: 'NextJs',
+		stage: '40',
+	},
+	{
+		name: 'Typescript',
+		stage: '40',
+	},
+	{
+		name: 'Axios',
+		stage: '50',
+	},
+	{
+		name: 'Tailwind CSS',
+		stage: '70',
+	},
+	{
+		name: 'Bootstrap',
+		stage: '80',
+	},
+	{
+		name: 'SaSS',
+		stage: '40',
+	},
+	{
+		name: 'Figma',
+		stage: '40',
+	},
+	{
+		name: 'NodeJS',
+		stage: '40',
+	},
+	{
+		name: 'MongoDB',
+		stage: '30',
+	},
+];
+
 const PersonalDetails = [
 	{ id: 0, title: 'Location', value: 'Maharagama | Colombo' },
 	{ id: 1, title: 'Languages', value: 'English | Sinhala' },
@@ -43,7 +114,11 @@ function App() {
 				onClickNavLink={handleNavLink}
 			/>
 
-			<Myself HeroImage={HeroImage} PersonalDetails={PersonalDetails}/>
+			<Myself
+				HeroImage={HeroImage}
+				PersonalDetails={PersonalDetails}
+				TechStack={TechStack}
+			/>
 		</Container>
 	);
 }

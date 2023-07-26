@@ -1,0 +1,45 @@
+.TechList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.TechGroup{
+
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-bottom: 15px;
+
+    h4{
+
+    }
+
+    .Stagebar{
+        border: 3px solid $secondary_color;
+        border-radius: 8px;
+        height: 20px;
+        width: 55%;
+        position: relative;
+        transition: all $transition_time_faster ease-in 0s;
+
+        &:hover{
+            border-color: $tertiary_color;
+        }
+    }
+
+    .Stagebar > span {
+        background-color: $secondary_color;
+        outline: 3px solid $secondary_color;
+        border-radius: 8px;
+        margin-top: 2px;
+        margin-left: 1px;
+        height: 11px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+}

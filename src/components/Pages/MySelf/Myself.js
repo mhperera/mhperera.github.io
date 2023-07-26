@@ -9,9 +9,18 @@ const Myself = (props) => {
 		<>
 			<Hero HeroImage={props.HeroImage} />
 			<Introduction />
-			<GeneralDetails PersonalDetails={props.PersonalDetails}/>
-			<TechStack />
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<GeneralDetails PersonalDetails={props.PersonalDetails} />
+			<TechStack TechStack={props.TechStack} />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
 		</>
 	);
 };

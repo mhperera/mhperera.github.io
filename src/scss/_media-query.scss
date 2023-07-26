@@ -48,6 +48,11 @@
         width: 50%;
     }
 
+    .TechGroup{
+        flex-direction: row;
+        flex-basis: 50% !important;
+    }
+
 }
 
 @media (max-width: $breakpoint-palmtop) {
@@ -78,6 +83,10 @@
         margin-bottom: 2rem;
     }
 
+    .TechGroup{
+        flex-basis: 100% !important;
+    }
+
 }
 
 @media (max-width: $breakpoint-smallmobile) {
@@ -92,4 +101,19 @@
             }
         }
     }
+
+    .TechGroup{
+        flex-basis: 100% !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+        h4{
+            margin-bottom: 15px;
+        }
+
+        .Stagebar{
+            width: 100%;
+        }
+    }
+
 }
