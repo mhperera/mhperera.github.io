@@ -158,6 +158,12 @@ p {
   margin-bottom: 4rem;
 }
 
+.big-text {
+  font-size: 5rem;
+  text-shadow: 4px 4px 0px #482F9B;
+  font-weight: 400;
+}
+
 /* ==================================== Buttons ==================================== */
 .Button {
   color: #ffffff;
@@ -202,7 +208,7 @@ p {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  height: 100px;
+  height: 82px;
   position: relative;
   width: 100%;
 }
@@ -211,8 +217,8 @@ p {
   margin-top: 2rem;
 }
 .btn-circle-wrapper .circle-border {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   background: transparent;
   border-radius: 50%;
   border: 0.15rem dashed #E7A018;
@@ -356,8 +362,9 @@ p {
   text-align: left;
 }
 .Hero .HeroDetails h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 .Hero .HeroDetails p {
   margin-bottom: 1rem;
