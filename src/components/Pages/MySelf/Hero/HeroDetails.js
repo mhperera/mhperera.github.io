@@ -5,12 +5,11 @@ const HeroDetails = () => {
 	return (
 		<div className="HeroDetails">
 			<h1>
-				I am a <br /> React JS | PHP <br />
+				Hi, I am a <br /> <span className='big-text'>Manasha</span> <br/> React JS | PHP <br />
 				Software Engineer
 			</h1>
 			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam a
-				earum maiores minima vitae dolorem.
+				I design and code beautifully simple things, and I love what I do
 			</p>
 
 			<div className='btn-circle-wrapper' >
